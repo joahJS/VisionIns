@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE08C406-C47F-4405-8F26-BCE991CC44A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VisionIns</RootNamespace>
+    <AssemblyName>VisionIns</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SJ_LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v18.2.Core, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00MN\MN002F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00MN\MN002F00.designer.cs">
+      <DependentUpon>MN002F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CM\CM001F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CM\CM001F00.designer.cs">
+      <DependentUpon>CM001F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CM\CM001F01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CM\CM001F01.designer.cs">
+      <DependentUpon>CM001F01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CM\CM002F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CM\CM002F00.designer.cs">
+      <DependentUpon>CM002F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CM\CM002F01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CM\CM002F01.designer.cs">
+      <DependentUpon>CM002F01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CM\CM003F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CM\CM003F00.Designer.cs">
+      <DependentUpon>CM003F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CM\CM003F01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CM\CM003F01.Designer.cs">
+      <DependentUpon>CM003F01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComnLib\ComnClass.cs" />
+    <Compile Include="ComnLib\ComnEtcFunc.cs" />
+    <Compile Include="ComnLib\ComnGridFunc.cs" />
+    <Compile Include="ComnLib\ComnMethod.cs" />
+    <Compile Include="ComnLib\DBConn.cs" />
+    <Compile Include="ComnLib\MainButtonInterface.cs" />
+    <Compile Include="00MN\MN001F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00MN\MN001F00.designer.cs">
+      <DependentUpon>MN001F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03MT\MT001F01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03MT\MT001F01.designer.cs">
+      <DependentUpon>MT001F01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03MT\MT002F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03MT\MT002F00.designer.cs">
+      <DependentUpon>MT002F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03MT\MT001F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03MT\MT001F00.designer.cs">
+      <DependentUpon>MT001F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="00MN\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00MN\WaitForm1.designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01SY\SY001F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01SY\SY001F00.designer.cs">
+      <DependentUpon>SY001F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01SY\SY001F01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01SY\SY001F01.designer.cs">
+      <DependentUpon>SY001F01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01SY\SY001F02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01SY\SY001F02.designer.cs">
+      <DependentUpon>SY001F02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01SY\SY000F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01SY\SY000F00.designer.cs">
+      <DependentUpon>SY000F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01SY\SY000F01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01SY\SY000F01.designer.cs">
+      <DependentUpon>SY000F01.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="00MN\MN002F00.resx">
+      <DependentUpon>MN002F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CM\CM001F00.resx">
+      <DependentUpon>CM001F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CM\CM001F01.resx">
+      <DependentUpon>CM001F01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CM\CM002F00.resx">
+      <DependentUpon>CM002F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CM\CM002F01.resx">
+      <DependentUpon>CM002F01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CM\CM003F00.resx">
+      <DependentUpon>CM003F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00MN\MN001F00.resx">
+      <DependentUpon>MN001F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03MT\MT001F01.resx">
+      <DependentUpon>MT001F01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03MT\MT002F00.resx">
+      <DependentUpon>MT002F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03MT\MT001F00.resx">
+      <DependentUpon>MT001F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CM\CM003F01.resx">
+      <DependentUpon>CM003F01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="00MN\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01SY\SY001F00.resx">
+      <DependentUpon>SY001F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01SY\SY001F01.resx">
+      <DependentUpon>SY001F01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01SY\SY001F02.resx">
+      <DependentUpon>SY001F02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01SY\SY000F00.resx">
+      <DependentUpon>SY000F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01SY\SY000F01.resx">
+      <DependentUpon>SY000F01.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\additem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletedatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update2.jpg" />
+    <None Include="Resources\update.jpg" />
+    <None Include="Resources\login_bg2.jpg" />
+    <None Include="Resources\login_bg1.jpg" />
+    <None Include="Resources\login_bg.jpg" />
+    <None Include="Resources\circle-xmark-solid-full.svg" />
+    <None Include="Resources\circle-play-solid-full.svg" />
+    <None Include="Resources\circle-check-solid-full.svg" />
+    <None Include="Resources\no_img.png" />
+    <None Include="Resources\circle-xmark-solid-full.png" />
+    <None Include="Resources\circle-play-solid-full.png" />
+    <None Include="Resources\circle-check-solid-full.png" />
+    <None Include="Resources\close-circle-fill-w.png" />
+    <None Include="Resources\close-line-w.png" />
+    <None Include="Resources\information-2-line .png" />
+    <None Include="Resources\qr_no1.png" />
+    <None Include="Resources\qr_no2.png" />
+    <None Include="Resources\qr_no3.png" />
+    <None Include="Resources\qr_no4.png" />
+    <None Include="Resources\qr_no5.png" />
+    <None Include="Resources\qr_no6.png" />
+    <None Include="Resources\qr_no7.png" />
+    <None Include="Resources\qr_no8.png" />
+    <None Include="Resources\qr_no9.png" />
+    <None Include="Resources\qr_no10.png" />
+    <None Include="Resources\QR_Sample.jpg" />
+    <Content Include="SJ_LOGO.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
