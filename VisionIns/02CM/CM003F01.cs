@@ -208,5 +208,24 @@ namespace VisionIns
             else if (e.Button.Properties.Tag.Equals("DEL"))
                 Pic_Iimg.EditValue = null;
         }
+
+        private void Be_Itnam_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            Be_Itnam.Focus();
+            ButtonEdit btnEdit = (ButtonEdit)sender;
+            string sVal = btnEdit.EditValue?.ToString().Trim();
+            ProductSelect frm = new ProductSelect();
+            frm.Owner = this;
+            frm.DataRowSendEvent += new ProductSelect.SendDataHandler(SetProductInfo);
+            frm.FindWord = sVal;
+            frm.ShowDialog();
+        }
+
+        private void SetProductInfo(DataRow row)
+        {
+            Tx_Itcod.EditValue = row["ITCOD"];
+            Be_Itnam.EditValue = row["ITNAM"];
+            
+        }
     }
 }
