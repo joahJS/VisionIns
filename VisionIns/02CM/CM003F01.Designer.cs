@@ -618,13 +618,13 @@
             this.layoutControlItem17.MaxSize = new System.Drawing.Size(0, 28);
             this.layoutControlItem17.MinSize = new System.Drawing.Size(131, 28);
             this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(338, 29);
+            this.layoutControlItem17.Size = new System.Drawing.Size(436, 29);
             this.layoutControlItem17.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem17.Text = "작업자명";
             this.layoutControlItem17.TextSize = new System.Drawing.Size(55, 15);
-            // 
+            //
             // layoutControlItem18
-            // 
+            //
             this.layoutControlItem18.Control = this.Tx_Plncd;
             this.layoutControlItem18.Location = new System.Drawing.Point(338, 93);
             this.layoutControlItem18.MaxSize = new System.Drawing.Size(114, 29);
@@ -635,6 +635,7 @@
             this.layoutControlItem18.Text = "작업자코드";
             this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem18.TextVisible = false;
+            this.layoutControlItem18.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // emptySpaceItem1
             // 
