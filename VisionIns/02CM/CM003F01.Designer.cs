@@ -36,7 +36,7 @@
             this.Be_Itnam = new DevExpress.XtraEditors.ButtonEdit();
             this.Me_Rk = new DevExpress.XtraEditors.MemoEdit();
             this.Tx_Plncd = new DevExpress.XtraEditors.TextEdit();
-            this.Be_Plnnm = new DevExpress.XtraEditors.ButtonEdit();
+            this.Tx_Plnnm = new DevExpress.XtraEditors.TextEdit();
             this.Te_ITime = new DevExpress.XtraEditors.TimeEdit();
             this.Tx_Itcod = new DevExpress.XtraEditors.TextEdit();
             this.Dt_IDate = new DevExpress.XtraEditors.DateEdit();
@@ -85,7 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Be_Itnam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Me_Rk.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Plncd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Be_Plnnm.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tx_Plnnm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_ITime.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Itcod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -134,7 +134,7 @@
             this.layoutControl1.Controls.Add(this.Be_Itnam);
             this.layoutControl1.Controls.Add(this.Me_Rk);
             this.layoutControl1.Controls.Add(this.Tx_Plncd);
-            this.layoutControl1.Controls.Add(this.Be_Plnnm);
+            this.layoutControl1.Controls.Add(this.Tx_Plnnm);
             this.layoutControl1.Controls.Add(this.Te_ITime);
             this.layoutControl1.Controls.Add(this.Tx_Itcod);
             this.layoutControl1.Controls.Add(this.Dt_IDate);
@@ -201,16 +201,14 @@
             this.Tx_Plncd.StyleController = this.layoutControl1;
             this.Tx_Plncd.TabIndex = 60;
             // 
-            // Be_Plnnm
-            // 
-            this.Be_Plnnm.Location = new System.Drawing.Point(82, 173);
-            this.Be_Plnnm.Name = "Be_Plnnm";
-            this.Be_Plnnm.Properties.AutoHeight = false;
-            this.Be_Plnnm.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.Be_Plnnm.Size = new System.Drawing.Size(276, 24);
-            this.Be_Plnnm.StyleController = this.layoutControl1;
-            this.Be_Plnnm.TabIndex = 59;
+            // Tx_Plnnm
+            //
+            this.Tx_Plnnm.Location = new System.Drawing.Point(82, 173);
+            this.Tx_Plnnm.Name = "Tx_Plnnm";
+            this.Tx_Plnnm.Properties.AutoHeight = false;
+            this.Tx_Plnnm.Size = new System.Drawing.Size(276, 24);
+            this.Tx_Plnnm.StyleController = this.layoutControl1;
+            this.Tx_Plnnm.TabIndex = 59;
             // 
             // Te_ITime
             // 
@@ -615,7 +613,7 @@
             // 
             this.layoutControlItem17.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem17.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.layoutControlItem17.Control = this.Be_Plnnm;
+            this.layoutControlItem17.Control = this.Tx_Plnnm;
             this.layoutControlItem17.Location = new System.Drawing.Point(0, 93);
             this.layoutControlItem17.MaxSize = new System.Drawing.Size(0, 28);
             this.layoutControlItem17.MinSize = new System.Drawing.Size(131, 28);
@@ -789,7 +787,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Be_Itnam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Me_Rk.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Plncd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Be_Plnnm.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tx_Plnnm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Te_ITime.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Itcod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties.CalendarTimeProperties)).EndInit();
@@ -866,7 +864,7 @@
         private DevExpress.XtraEditors.ButtonEdit Be_Itnam;
         private DevExpress.XtraEditors.MemoEdit Me_Rk;
         private DevExpress.XtraEditors.TextEdit Tx_Plncd;
-        private DevExpress.XtraEditors.ButtonEdit Be_Plnnm;
+        private DevExpress.XtraEditors.TextEdit Tx_Plnnm;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;

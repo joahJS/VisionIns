@@ -43,7 +43,7 @@ namespace VisionIns
             Te_ITime.EditValue = DateTime.Now;
             Be_Itnam.EditValue = "";
             Tx_Itcod.EditValue = "";
-            Be_Plnnm.EditValue = "";
+            Tx_Plnnm.EditValue = "";
             Tx_Plncd.EditValue = LoginUser.USRCD;
             Rg_Rslt.EditValue = "";
             Cb_Iitem1.EditValue = "";
@@ -70,7 +70,7 @@ namespace VisionIns
             Te_ITime.EditValue = dt.Rows[0]["ITIME"]?.ToString();
             Be_Itnam.EditValue = dt.Rows[0]["ITNAM"]?.ToString();
             Tx_Itcod.EditValue = dt.Rows[0]["ITCOD"]?.ToString();
-            Be_Plnnm.EditValue = dt.Rows[0]["PLNNM"]?.ToString();
+            Tx_Plnnm.EditValue = dt.Rows[0]["PLNNM"]?.ToString();
             Tx_Plncd.EditValue = dt.Rows[0]["PLNCD"]?.ToString();
             Rg_Rslt.EditValue = dt.Rows[0]["RSLT"]?.ToString();
             Cb_Iitem1.SelectedItem = dt.Rows[0]["IITEM1"]?.ToString();
