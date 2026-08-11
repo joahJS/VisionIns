@@ -201,8 +201,23 @@ namespace VisionIns
                 ofd.Filter = "Images Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)| *.jpg; *.jpeg; *.gif; *.bmp; *.png";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    Pic_Iimg.Image = new Bitmap(ofd.FileName);
-                    Pic_Iimg.Tag = ofd.FileName;
+                    try
+                    {
+                        // new Bitmap(path)로 바로 로드하면 파일이 계속 잠긴 상태로 남고,
+                        // 일부 파일에서 로드 실패가 조용히 무시되는 경우가 있어
+                        // 스트림으로 읽은 뒤 복제해서 원본 파일 핸들을 즉시 해제한다.
+                        using (FileStream fs = new FileStream(ofd.FileName, FileMode.Open, FileAccess.Read))
+                        using (Image loaded = Image.FromStream(fs))
+                        {
+                            Pic_Iimg.Image = new Bitmap(loaded);
+                        }
+                        Pic_Iimg.Tag = ofd.FileName;
+                        Pic_Iimg.Refresh();
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show("이미지를 불러오지 못했습니다.\r\n" + ex.Message, "이미지 첨부 실패");
+                    }
                 }
             }
             else if (e.Button.Properties.Tag.Equals("DEL"))
