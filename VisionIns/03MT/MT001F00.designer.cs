@@ -829,9 +829,9 @@
             this.gridColumn17.Width = 64;
             // 
             // gridColumn20
-            // 
+            //
             this.gridColumn20.Caption = "작업자";
-            this.gridColumn20.FieldName = "PLNNM";
+            this.gridColumn20.FieldName = "WKNM";
             this.gridColumn20.MinWidth = 17;
             this.gridColumn20.Name = "gridColumn20";
             this.gridColumn20.Visible = true;
@@ -1148,9 +1148,9 @@
             this.gridColumn8.Width = 64;
             // 
             // gridColumn19
-            // 
+            //
             this.gridColumn19.Caption = "작업자";
-            this.gridColumn19.FieldName = "PLNNM";
+            this.gridColumn19.FieldName = "WKNM";
             this.gridColumn19.MinWidth = 17;
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.Visible = true;
