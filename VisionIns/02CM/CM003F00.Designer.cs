@@ -352,7 +352,7 @@
             this.GridColPlnnm.AppearanceCell.Options.UseTextOptions = true;
             this.GridColPlnnm.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.GridColPlnnm.Caption = "작업자";
-            this.GridColPlnnm.FieldName = "PLNNM";
+            this.GridColPlnnm.FieldName = "WKNM";
             this.GridColPlnnm.Name = "GridColPlnnm";
             this.GridColPlnnm.OptionsColumn.AllowEdit = false;
             this.GridColPlnnm.OptionsColumn.AllowFocus = false;
