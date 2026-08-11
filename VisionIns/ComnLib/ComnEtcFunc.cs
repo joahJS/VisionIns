@@ -1154,7 +1154,14 @@ class ComnEtcFunc
     {
         using (var ms = new MemoryStream())
         {
-            imageIn.Save(ms, imageIn.RawFormat);
+            // 파일이 아닌 Image로부터 복제/생성된 Bitmap은 RawFormat이 MemoryBmp가 되는데,
+            // MemoryBmp는 저장용 인코더가 없어 Save() 호출 시 ArgumentNullException("encoder")이
+            // 발생한다. 인코더가 없는 포맷일 때는 Png로 대체한다.
+            System.Drawing.Imaging.ImageFormat format = imageIn.RawFormat;
+            if (format == null || format.Equals(System.Drawing.Imaging.ImageFormat.MemoryBmp))
+                format = System.Drawing.Imaging.ImageFormat.Png;
+
+            imageIn.Save(ms, format);
             return ms.ToArray();
         }
     }
