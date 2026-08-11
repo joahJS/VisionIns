@@ -70,7 +70,7 @@ namespace VisionIns
             Te_ITime.EditValue = dt.Rows[0]["ITIME"]?.ToString();
             Be_Itnam.EditValue = dt.Rows[0]["ITNAM"]?.ToString();
             Tx_Itcod.EditValue = dt.Rows[0]["ITCOD"]?.ToString();
-            Tx_Plnnm.EditValue = dt.Rows[0]["PLNNM"]?.ToString();
+            Tx_Plnnm.EditValue = dt.Rows[0]["WKNM"]?.ToString();
             Tx_Plncd.EditValue = dt.Rows[0]["PLNCD"]?.ToString();
             Rg_Rslt.EditValue = dt.Rows[0]["RSLT"]?.ToString();
             Cb_Iitem1.SelectedItem = dt.Rows[0]["IITEM1"]?.ToString();
@@ -110,8 +110,9 @@ namespace VisionIns
             
             string sIDate = Dt_IDate.EditValue?.ToString();
             string sITime = Te_ITime.Time.ToString("HH:mm:ss");
-            string sItcod = Tx_Itcod.EditValue?.ToString(); 
+            string sItcod = Tx_Itcod.EditValue?.ToString();
             string sPlncd = Tx_Plncd.EditValue?.ToString();
+            string sWknm = Tx_Plnnm.EditValue?.ToString();
             string sRslt = Rg_Rslt.EditValue?.ToString();
             string sIitem1 = Cb_Iitem1.SelectedItem?.ToString();
             string sIitem2 = Cb_Iitem2.SelectedItem?.ToString();
@@ -134,6 +135,7 @@ namespace VisionIns
                 dicParams.Add("ITIME", sITime);
                 dicParams.Add("ITCOD", sItcod);
                 dicParams.Add("PLNCD", sPlncd);
+                dicParams.Add("WKNM", sWknm);
                 dicParams.Add("RSLT", sRslt);
                 dicParams.Add("IITEM1", sIitem1);
                 dicParams.Add("IITEM2", sIitem2);
