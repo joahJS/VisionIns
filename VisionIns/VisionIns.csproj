@@ -121,6 +121,12 @@
     <Compile Include="ComnLib\ComnMethod.cs" />
     <Compile Include="ComnLib\DBConn.cs" />
     <Compile Include="ComnLib\MainButtonInterface.cs" />
+    <Compile Include="ComnLib\Form\ProductSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComnLib\Form\ProductSelect.designer.cs">
+      <DependentUpon>ProductSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="00MN\MN001F00.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </Compile>
     <EmbeddedResource Include="00MN\MN002F00.resx">
       <DependentUpon>MN002F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComnLib\Form\ProductSelect.resx">
+      <DependentUpon>ProductSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="02CM\CM001F00.resx">
       <DependentUpon>CM001F00.cs</DependentUpon>
